@@ -29,10 +29,12 @@ class Scraper
     array = doc.css('ul.fast_facts li').text.delete("\t").delete("\n").delete("\r").split("  ")
     # => "Acronym: AcrimSatType: OrbiterStatus: PastLaunch Date: December 20, 1999, Launch Location: Vandenberg Air Force #Base, CaliforniaMission End Date: August 08, 2014Target: EarthCurrent Location: Earth Orbit\r\nAltitude: 713 km #(apogee), #672 km (perigee)"
     binding.pry
-    array.map {|el| el.split(":")}
+    sets = array.map {|el| el.split(":")}
+    set.seach do |set|
+      k = 
 
     attributes = {}
-    
+
 
 
   end
