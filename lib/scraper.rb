@@ -31,12 +31,9 @@ class Scraper
     #binding.pry
     new = array.map {|el| el.split(":")}
     #binding.pry
-    new.each do |el|
-      k = el[0]#.to_sym
-      v = el[1].delete(": ")
-      binding.pry
-      attributes[:k] = v 
-      #binding.pry
+    attributes = {}
+    fattributes.merge!(el[0]: "el[1].delete(": ")")
+    binding.pry
     end
 
 
