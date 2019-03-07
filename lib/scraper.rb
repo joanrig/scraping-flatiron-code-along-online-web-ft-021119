@@ -30,12 +30,14 @@ class Scraper
     # => "Acronym: AcrimSatType: OrbiterStatus: PastLaunch Date: December 20, 1999, Launch Location: Vandenberg Air Force #Base, CaliforniaMission End Date: August 08, 2014Target: EarthCurrent Location: Earth Orbit\r\nAltitude: 713 km #(apogee), #672 km (perigee)"
     #binding.pry
     sets = array.map {|el| el.split(":")}
-    binding.pry
+    #binding.pry
     sets.each do |el|
       k = el[0].to_sym
       v = el[1].delete(": ")
       attributes[k] = v
+      binding.pry
     end
+
 
 
     attributes = {}
