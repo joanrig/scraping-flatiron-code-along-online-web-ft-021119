@@ -31,7 +31,7 @@ class Scraper
     binding.pry
     sets = array.map {|el| el.split(":")}
     set.seach do |set|
-      k = sets[0].to_sym
+      k = set[0].to_sym
       v =
 
     attributes = {}
