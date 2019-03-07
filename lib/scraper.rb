@@ -32,7 +32,7 @@ class Scraper
     new = array.map {|el| el.split(":")}
     #binding.pry
     attributes = {}
-    fattributes.merge!(el[0]: "el[1].delete(": ")")
+    attributes.merge!(el[0]: "el[1].delete(": ")")
     binding.pry
     end
 
