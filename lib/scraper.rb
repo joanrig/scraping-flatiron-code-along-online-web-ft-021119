@@ -32,6 +32,7 @@ class Scraper
     new = array.map {|el| el.split(":")}
     #binding.pry
     new.each do |el|
+      binding.pry
       k = el[0].to_sym
       v = el[1].delete(": ")
       attributes[k] = v
