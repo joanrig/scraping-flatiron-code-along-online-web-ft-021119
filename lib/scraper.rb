@@ -32,7 +32,7 @@ class Scraper
     array.map {|el| el.split(":")}
 
     attributes = {}
-    k =
+    
 
 
   end
