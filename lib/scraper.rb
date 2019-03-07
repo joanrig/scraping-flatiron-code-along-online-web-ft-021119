@@ -35,7 +35,7 @@ class Scraper
       binding.pry
       k = el[0].to_sym
       v = el[1].delete(": ")
-      attributes[k] = v
+      attributes[:k] = v
       #binding.pry
     end
 
