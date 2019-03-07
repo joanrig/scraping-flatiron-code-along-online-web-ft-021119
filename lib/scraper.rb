@@ -31,9 +31,9 @@ class Scraper
     #binding.pry
     sets = array.map {|el| el.split(":")}
     binding.pry
-    sets.each do |set|
-      k = set[0].to_sym
-      v = set[1].delete(": ")
+    sets.each do |el|
+      k = el[0].to_sym
+      v = el[1].delete(": ")
       attributes[k] = v
     end
 
